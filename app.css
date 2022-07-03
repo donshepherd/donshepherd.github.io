@@ -1,0 +1,115 @@
+@import url("fonts.css");
+
+:root {
+    --brand-primary: #00a8e8;
+    --brand-primary-light: #007ea7;
+    --brand-secondary: #007ea7;
+    --gray: #9ca3af;
+    --light-gray: #F7F8FC;
+    --dark-gray: #515555;
+    --black: #00171f;
+    --white: #ffffff;
+    --dark-mode: #0D2538;
+    --dark-mode-button: #1E3851;
+}
+
+.container {
+    max-width: 1248px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-rows: 1fr;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .grid-center {
+        grid-column: 1/-1
+    }
+
+}
+
+a {
+color:inherit;
+text-decoration:inherit;
+color: var(--brand-primary-light)
+}
+
+a.router-link-active, .dark a.navigation__link.router-link-active {
+color: var(--brand-secondary);
+text-decoration: underline;
+}
+
+.inline-text-anchor {
+    background-color: var(--white);
+    color: var(--brand-secondary);
+}
+
+.dark .inline-text-anchor {
+    background-color: var(--dark-mode);
+    color: var(--brand-secondary);
+}
+
+.dark a {
+    color: var(--brand-primary);
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+a.hover-highlight:hover, .dark a.hover-highlight:hover  {
+color: var(--brand-primary);
+}
+
+.text-black {
+color: var(--black);
+}
+
+.text-white {
+color: var(--white);
+}
+
+.text-primary {
+    color: var(--brand-primary-light);
+}
+
+.dark .text-primary {
+    color: var(--brand-primary);
+}
+
+.color-primary {
+color: var(--brand-primary);
+}
+
+.btn-light {
+background: var(--light-gray);
+}
+
+.btn-dark {
+background: var(--dark-mode-button);
+}
+
+body {
+background-color: var(--white);
+}
+
+body.dark {
+background-color: var(--dark-mode);
+color: var(--white);
+}
+
+.pl-1 {
+padding-left: 0.5rem
+}
+
