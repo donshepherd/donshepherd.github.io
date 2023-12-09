@@ -1,0 +1,85 @@
+/*General Sans - Primary Font*/
+
+@font-face {
+    font-family: 'GeneralSans-Variable';
+    src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('woff2-variations');
+    font-weight: 200 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans-VariableItalic';
+    src: url('./fonts/PublicSans-Italic-VariableFont_wght.ttf') format('woff2-variations');
+    font-weight: 200 700;
+    font-style: italic;
+}
+
+:root {
+    --font-family: GeneralSans-Variable, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-italic: GeneralSans-VariableItalic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.font-normal {
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.font-italic {
+    font-family: var(--font-family-italic);
+    font-weight: 400;
+}
+
+.font-extralight {
+    font-family: var(--font-family);
+    font-weight: 200;
+}
+
+.font-extralight-italic {
+    font-family: var(--font-family-italic);
+    font-weight: 200;
+}
+
+.font-light {
+    font-family: var(--font-family);
+    font-weight: 300;
+}
+
+.font-light-italic {
+    font-family: var(--font-family-italic);
+    font-weight: 300;
+}
+
+.font-semibold {
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+.font-semibold-italic {
+    font-family: var(--font-family-italic);
+    font-weight: 600;
+}
+
+.font-bold {
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+
+.font-bold-italic {
+    font-family: var(--font-family-italic);
+    font-weight: 700;
+}
+
+/*Space Mono - Secondary Font*/
+
+@font-face {
+    font-family: 'SpaceMono-Regular';
+    src: url('./fonts/SpaceMono-Regular.ttf');
+}
+
+.font-mono-normal {
+    font-family: SpaceMono-Regular, monospace;
+}
+
+.font-mono-bold {
+    font-family: SpaceMono-Bold, monospace;
+}
